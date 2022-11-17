@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #55d6aa;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.intro {
+  color:#55d6aa;
+  text-align: center;
+}
+
+.intro-body {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.home-boxes{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  grid-gap: 20px;
+}
+
+.moves-box{
+  grid-column: 1;
+  background: #55d6aa;
+  padding: 15px;
+  font-size: 25px;
+
+}
+
+.stats-box{
+  grid-column: 2;
+  background: #55d6aa;
+  padding: 15px;
+  font-size: 25px;
+}
+
+.rules-box{
+  grid-column: 3;
+  background: #55d6aa;
+  padding: 15px;
+  font-size: 25px;
+}
+
+.box-img{
+  max-width:100%;
+}
+
+.wbg{
+  background-color: white;
+}
+
+.text-body {
+  color:#55d6aa;
+}
+.text-header {
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
+.text-para {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@media screen and (max-width: 720px) {
+
+.home-boxes{
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  grid-gap: 20px;
+}
+
+.moves-box{
+  grid-column: 1;
+  background: #55d6aa;
+  padding: 15px;
+  font-size: 25px;
+
+}
+
+.stats-box{
+  grid-column: 1;
+  background: #55d6aa;
+  padding: 15px;
+  font-size: 25px;
+}
+
+.rules-box{
+  grid-column: 1;
+  background: #55d6aa;
+  padding: 15px;
+  font-size: 25px;
+}
+
+.box-img{
+  max-width:100%;
+}
+
+}
